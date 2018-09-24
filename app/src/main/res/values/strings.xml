@@ -1,0 +1,32 @@
+<resources>
+  <!-- Main Headers -->
+  <string name="app_name">UOIT Room Finder</string>
+  <string name="title_home">Home</string>
+  <string name="title_search">Search</string>
+  <string name="title_help">Help</string>
+  <string name="no_rooms">No Open Rooms</string>
+  <string name="room">Room</string>
+  <string name="no_classes"> No more classes in</string>
+  <string name="more_classes"> Upcoming classes in</string>
+
+  <!-- XML Layout Strings -->
+  <string name="date">Date</string>
+  <string name="start_time">Start Time</string>
+  <string name="end_time">End Time</string>
+  <string name="faq_title">F.A.Q</string>
+
+  <string name="lab_warning">Lab Room: Might be Locked!</string>
+
+  <string name="does_do_title">What does Room Finder do?</string>
+  <string name="does_do">Room Finder uses the schedules created at the beginning of the semester to determine when a room is not being used by any classes.</string>
+
+  <string name="does_not_do_title">What doesn\'t Room Finder do?</string>
+  <string name="does_not_do">Room Finder does not provide live updates and sometimes a room may be booked by clubs, societies or other organizations which Room Finder doesn\'t take into account.</string>
+
+  <string name="use_title">How do I use Room Finder?</string>
+  <string name="use">The Home page has a list of current open rooms and you can choose to search by Room or Time from the navigation menu. By clicking on an open room you will be able to see when the next class is and where the building is located on the map.</string>
+
+  <!-- API Keys -->
+  <string name="google_maps_key">AIzaSyA-V4LRkwmrl7DeAwR9wq8oKvyDmalFOiY</string>
+
+</resources>

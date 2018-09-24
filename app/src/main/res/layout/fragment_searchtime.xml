@@ -1,0 +1,146 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/White"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-2173238213882820/2505607948" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/date"
+                        android:inputType="none"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:textAlignment="center"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Gray"
+                        android:textSize="15sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:id="@+id/start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/start_time"
+                        android:inputType="none"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:textAlignment="center"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Gray"
+                        android:textSize="15sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:id="@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/end_time"
+                        android:inputType="none"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        android:textAlignment="center"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/Gray"
+                        android:textSize="15sp" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/collapsed_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/ribbon_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/Gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ExpandableListView
+        android:id="@+id/expLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/Transparent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_search_black_24dp"
+        android:tint="@color/White"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+</android.support.design.widget.CoordinatorLayout>
