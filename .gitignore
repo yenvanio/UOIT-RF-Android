@@ -2,6 +2,7 @@
 
 # Configuration Files
 config/
+build/
 
 # compiled output
 # /dist
